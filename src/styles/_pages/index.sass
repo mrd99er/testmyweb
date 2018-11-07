@@ -1,0 +1,89 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home-banner
+	.slider
+		position: relative
+		.owl-nav
+			button
+				i 
+					+pad(1rem 1.5rem)
+					background: white
+					color: orange
+					&.active, &:hover
+						background: orange
+						color: white
+						border-radius: 5px
+		.owl-dots
+			.owl-dot
+				span
+					border-radius: 1px
+					background: #d6d6d600
+					border: 1px solid orange
+				&.active, &:hover
+					span 
+						background-color: orange
+			position: absolute
+			bottom: 1rem
+			left: 0
+			width: 100%
+	.item
+		.title
+			width: 100%
+			padding: .5rem 0 0 0
+			color: black
+			font-size: 16px
+			text-align: center
+		+media-breakpoint-up(sm)
+			.title
+				position: absolute
+				bottom: 4rem
+				left: 0
+				text-align: center
+				+background-horizontal (rbga(255, 255, 255, 0), #000)
+				color: white
+				font-size: 15px
+		+media-breakpoint-up(md)
+			.title
+				color: white
+				font-size: 25px
+.home-service
+	background: url('../img/home/service_bg.png') no-repeat
+	height: 100vh
+	.title-service
+		text-align: center
+		color: white
+		position: relative
+		font-size: 32px
+		padding-top: 2rem
+		text-transform: uppercase
+		&:before
+			content: ''
+			display: block
+			width: 80px
+			height: 3px
+			background: orange
+			position: absolute
+			bottom: -10px
+			left: 50%
+			transform: translateX(-50%)
+		&:after
+			content: ''
+			display: block
+			width: 0
+			height: 0
+			border-top: 3px solid orange
+			border-left: 3px solid transparent
+			position: absolute
+			bottom: -10px
+			left: 44.2%
+// &:before
+// 		content: ''
+// 		display: block
+// 		width: 0
+// 		height: 0
+// 		border-top: 5px solid orange
+// 		border-left: 5px solid transparent
+// 		position: absolute
+// 		left: 0
+// 		top: 0

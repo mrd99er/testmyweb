@@ -1,0 +1,42 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-banner
+		.slider.owl-carousel.owl-theme
+			.item
+				img(src="./img/home/slide_bg_01.png", alt="", srcset="")
+				.title Trải nghiệm vượt trội cùng Tutto
+			.item
+				img(src="./img/home/slide_bg_02.png", alt="", srcset="")
+				.title 
+			.item
+				img(src="./img/home/slide_bg_03.png", alt="", srcset="")
+				.title Tự tin làm chủ tay lái trên mọi chặng đường
+			.item
+				img(src="./img/home/slide_bg_04.png", alt="", srcset="")
+				.title Trải nghiệm vượt trội cùng Tutto
+	section.home-service
+		h1.title-service Sản phẩm nổi bật
+			h2 
+			h3 
+		.service.owl-carousel.owl-theme
+			.item
+				img(src="./img/home/service_img_01.png", alt="", srcset="")
+			.item
+				img(src="./img/home/service_img_02.png", alt="", srcset="")
+			.item
+				img(src="./img/home/service_img_03.png", alt="", srcset="")
+			.item
+				img(src="./img/home/service_img_01.png", alt="", srcset="")
+			.item
+				img(src="./img/home/service_img_02.png", alt="", srcset="")
+			.item
+				img(src="./img/home/service_img_03.png", alt="", srcset="")
